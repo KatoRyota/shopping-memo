@@ -1,7 +1,7 @@
-export default function InputTodo(props) {
+export const InputTodo = (props) => {
   const { todoText, onChange, onClick } = props;
 
-  const style = {
+  const styleInputArea = {
     backgroundColor: "#c1ffff",
     width: "400px",
     height: "30px",
@@ -11,9 +11,9 @@ export default function InputTodo(props) {
   };
 
   return (
-    <div style={style}>
-      <input placeholder="TODOを入力" value={todoText} onChange={onChange} />
+    <div style={styleInputArea}>
+      <input placeholder="商品を入力" value={todoText} onChange={onChange} />
       <button onClick={onClick}>追加</button>
     </div>
   );
-}
+};

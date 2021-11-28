@@ -1,4 +1,4 @@
-export default function IncompleteTodos(props) {
+export const IncompleteTodos = (props) => {
   const { todos, onClickComplete, onClickDelete } = props;
 
   const styleIncompleteArea = {
@@ -25,13 +25,15 @@ export default function IncompleteTodos(props) {
 
   return (
     <div style={styleIncompleteArea}>
-      <p style={styleTitle}>未完了のTODO</p>
+      <p style={styleTitle}>お買い物メモ</p>
       <ul>
         {todos.map((todo, index) => {
           return (
             <div key={todo} style={styleListRow}>
               <li>{todo}</li>
-              <button onClick={() => onClickComplete(index)}>完了</button>
+              <button onClick={() => onClickComplete(index)}>
+                カゴに入れた
+              </button>
               <button onClick={() => onClickDelete(index)}>削除</button>
             </div>
           );
@@ -39,4 +41,4 @@ export default function IncompleteTodos(props) {
       </ul>
     </div>
   );
-}
+};

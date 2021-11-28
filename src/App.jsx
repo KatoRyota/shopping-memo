@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./styles.css";
-import InputTodo from "./components/InputTodo";
-import IncompleteTodos from "./components/IncompleteTodos";
-import CompleteTodos from "./components/CompleteTodos";
+import { InputTodo } from "./components/InputTodo";
+import { IncompleteTodos } from "./components/IncompleteTodos";
+import { CompleteTodos } from "./components/CompleteTodos";
 
 export default function App() {
   const [todoText, setTodoText] = useState("");

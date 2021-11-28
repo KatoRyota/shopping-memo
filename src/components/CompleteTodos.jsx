@@ -1,4 +1,4 @@
-export default function CompleteTodos(props) {
+export const CompleteTodos = (props) => {
   const { todos, onClickBack } = props;
 
   const styleCompleteArea = {
@@ -25,7 +25,7 @@ export default function CompleteTodos(props) {
 
   return (
     <div style={styleCompleteArea}>
-      <p style={styleTitle}>完了のTODO</p>
+      <p style={styleTitle}>買い物カゴ</p>
       <ul>
         {todos.map((todo, index) => {
           return (
@@ -38,4 +38,4 @@ export default function CompleteTodos(props) {
       </ul>
     </div>
   );
-}
+};
